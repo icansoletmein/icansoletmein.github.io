@@ -1,21 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="stylesheet" href="12a.css">
-		<script src="12a.js" defer></script>
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js" defer></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
-	
 	<body>
-		<input id="aField" type="number" placeholder="Enter a">
-		<input id="bField" type="number" placeholder="Enter b">
-		<button id="sum">Get Sum</button>
-		<p class="msg-box" id="sum-box">Enter 2 numbers, press get sum</p>
-		
-		<input id="cField" type="number" placeholder="Enter c">
-		<input id="dField" type="number" placeholder="Enter d">
-		<button id="sub">Get Sub</button>
-		<p class="msg-box" id="sub-box">Enter 2 numbers, press get sub</p>
-		
+		<header>
+			<h1>Main Topic</h1>
+		</header>
+		<nav>
+			<button id="hamIcon">Open Menu</button>
+			<ul>
+				<li><button id="page1btn">Sub Topic 1</button></li>
+				<li><button id="page2btn">Sub Topic 2</button></li>
+				<li><button id="page3btn">Sub Topic 3</button></li>
+			</ul>
+		</nav>
+		<main id="pagecontainer">
+			<section class="page" id="page1">
+				page 1 conetent
+				<button id="leftBtn">Left</button>
+				<button id="rightBtn">Right</button>
+				<button id="upBtn">Up</button>
+				<button id="downBtn">Down</button>
+				<button id="resetBtn">Reset</button>
+				<div id="ball">Ball</div>
+			</section>
+			<section class="page" id="page2">
+				page 2 conetent
+				<h1>Durian CLicker</h1>
+				<p>Click durian to ctach it</p>
+				<h2 id="scoreBox"></h2>
+				<img id="durianId" src="durian.png" alt="durian image">
+			</section>
+			<section class="page" id="page3">
+				page 3 conetent
+			</section>
+		</main>
 	</body>
 </html>
