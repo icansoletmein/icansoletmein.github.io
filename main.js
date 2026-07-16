@@ -93,7 +93,7 @@ var velX, velY; //to store x and y velocity
 const minLeft = 0;
 const minTop = 0;
 const maxTop = 500;
-const maxLeft = max-width;
+const maxLeft = 500;
 //function to pick random number from a min-max range
 function RandomRange(min, max) {
 	return Math.round(Math.random() * (max - min) + min);
