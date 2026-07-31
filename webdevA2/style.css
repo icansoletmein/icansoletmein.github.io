@@ -5,8 +5,8 @@ main{background:#f2f4d1;/*yellow*/}
 /*page size*/
 .page{
 	width:100%;/*theres a white spacing next to header and nav if its at 100*/
-	min-height: 90dvh;
-	height:auto;
+	min-height: 80dvh;
+	padding-bottom:10px;/*for the broken gap when theres a margin-bottom*/
 }
 
 /*fonts*/
@@ -81,6 +81,7 @@ article{
 img{
 	display:block;
 	max-width:80%;
+
 }
 
 figure{
@@ -88,12 +89,14 @@ figure{
 	justify-items:center;
 }
 
+footer img{width:20%; margin-block:20px}
+
 footer{
 	background:black;
 	color:#89A3B2;
 	padding-block:1vw;
 	text-align:center;
-	
+	justify-items:center;
 }
 
 /*styling of indiviual pages*/
@@ -318,7 +321,7 @@ fieldset{border:solid black 1px}
 		display:grid;
 	}
 	#page2 img{min-width:90%}
-	#home img,#page3 img{max-width:50%}
+	img{max-width:50%}
 	
 	#gameBox{width:90%;}
 	
