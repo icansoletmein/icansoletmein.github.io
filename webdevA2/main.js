@@ -83,25 +83,6 @@ function toggleMenus(){
 	}
 }
 
-//The form
-const submitBtn = document.querySelector("#submitBn");
-const resetform = document.querySelector("#resetForm");
-const formpage = document.querySelector("#formpaper");
-const thxbox = document.querySelector("#thxbox");
-
-submitBtn.addEventListener("click", function(){
-	formpage.style.display="none";
-	thxbox.innerHTML = "Thank you for giving us feedback!";
-});
-
-resetform.onclick = function(){
-	console.log("formpaper reset");
-	formpage.style.display="block";
-	thxbox.innerHTML = "";
-	formpage.reset();
-	
-};
-
 //quiz
 const correctBox=document.querySelector("#correctBox");
 var q1Op1,q1Op2,q1Op3,q1Op4,correct=0;

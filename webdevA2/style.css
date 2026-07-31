@@ -190,12 +190,6 @@ footer{
 #up{grid-column:2/3;grid-row: 1/2;}
 #down{grid-column:2/3;grid-row: 2/3;}
 
-/*problem form*/
-form{font-size:20px}
-#formpaper h2,#formpaper h3{text-align:center}
-#comments,#details{width:90%;height:10vh;margin-inline:10px}
-#thxbox{text-align:center}
-
 /*quiz*/
 fieldset{border:solid black 1px}
 
@@ -261,8 +255,6 @@ fieldset{border:solid black 1px}
 #to4{grid-column:4/5;grid-row:7/8;margin-right:14vw;}
 
 /*SUBPAGE 2*/
-
-
 .continents{
 	display:grid;
 	grid-template-rows:1fr auto 1fr auto 1fr auto 1fr;
