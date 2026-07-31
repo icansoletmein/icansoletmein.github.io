@@ -325,28 +325,14 @@ fieldset{border:solid black 1px}
 	
 	#gameBox{width:90%;}
 	
-	/*because of how this is layed out, the grid needs to be changex*/
+	/*because of how this is layed out, the grid needs to be change*/
 	#page1{
-		grid-template-rows:auto auto 20vh auto auto auto auto auto;
-		grid-template-columns:auto 1vw auto;
-		justify-items:center;
-		align-items:center;
+		grid-template-rows:auto auto 1fr auto auto auto auto auto;
+		grid-template-columns:1fr;
 	}
 	
-	#histHeader{grid-column:1/4;}
-	#histHeaderDes{grid-column:1/4;}
-	#Timeline{grid-column:1/2;}
-	#firstHist,#secondHist,#thirdHist,#fourthHist{grid-column: 3/4;}
-	#extraInfo{
-		grid-column:1/4;
-	}
-	.ball{
-		width:7vw;
-		height:7vw;
-	}
-	#ball_1,#ball_2,#ball_3,#ball_4{grid-column:1/2;}
+	#histHeader,#histHeaderDes,#Timeline,#firstHist,#secondHist,#thirdHist,#fourthHist,#extraInfo{grid-column:1/2;}
 	
-	#to1,#to2,#to3,#to4{grid-column:2/3;margin-left:14vw;margin-right:10vw}
-	.vl{grid-column:1/2;height:80%;margin-bottom:4vh}
+	.ball,.vl,.hl{display:none}
 }
 .menuShow{display:block}
