@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="main.js" defer></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no"> 
+		<link rel="icon" type="image/x-icon" href="images/earth.jpg">
+		<title>Earth</title>
+	</head>
+	<body>
+		<header>
+			<h1>Earth</h1>
+		</header>
+		
+		<nav><!--menu navigations-->
+			<button id="hamIcon">Open Menu</button>
+			<ul>
+				<li><button id="homebtn">About Earth</button></li>
+				<li><button id="page1btn">History</button></li>
+				<li><button id="page2btn">Continents and oceans</button></li>
+				<li><button id="page3btn">Earth layers</button></li>
+			</ul>
+		</nav>
+		
+		<main id="pagecontainer">
+			<section class="page" id="home">
+				<h2>About Earth</h2>
+				<h3>Earth is this green and blue planet we all call home. It is the third planet from the Sun and
+				the only astronomical object in the universe known to harbor life.</h3>
+				
+				<figure>
+					<img id="earth" src="images/earth.png" alt="earth" title="earth">
+					<figcaption>
+						Photo found on <a href="https://pixabay.com/illustrations/earth-world-planet-globe-1303628/" target="_blank">pixabay</a> 
+					</figcaption>
+				</figure>
+				
+				<article class="genInfo">
+					<div id="App">
+						<h2>Appearance</h2>
+						<h3>Earth's surface area is made up of about 71% water and 29% land with patches of white cloud covering the atmosphere.</h3>
+					</div>
+					
+					<hr class="between">
+					
+					<div id="Atm">
+						<h2>Atmosphere</h2>
+						<h3>Earth's surface atmosphere is made up of 78% nitrogen, 21% oxygen, and 1% other gases
+						(such like argon, carbon dioxide, and neon.)</h3> 
+					</div>
+					
+					<!-- Appearance and Atmosphere to Population-->
+					<hr id="AppnAtmtoPop">
+					
+					<div id="Pop">
+						<h2>Population</h2>
+						<h3>It is estimated that there are as many as 7.77 million animal species on Earth. 
+						Humans are the most widespread species of primates, which is an order of mammals, however it is not the largest population on earth, 
+						even the global chicken population exceeds 26 to 34 billion birds at any given time. 
+						The current human population is about 8.3 billion people,  
+						with the top 3 contries with the most amount of people being India, China and the United States in that order.</h3>
+					</div>
+				</article>
+				
+				<!--Game-->
+				<article id="game">
+					<h2>Let's play a game</h2>
+					<h3>Help earth avoid the asteroids</h3>
+					<h3 id="pcControls">controls: up(w) down(s)</h3>
+					<h3 id="scoreBox">Score: </h3>
+					<h3 id="timeS">time survived: </h3>
+					<div id="gameBox">
+						<img id ="asteroid" src="images/asteroids.png" title="asteroid" alt="asteroid">
+						<img id ="asteroid2" class="hidden" src="images/asteroids.png" title="asteroid" alt="asteroid">
+						<img id ="asteroid3" class="hidden" src="images/asteroids.png" title="asteroid" alt="asteroid">
+						<div class="player player_normal"></div>
+					</div>
+					
+					<button id="startBtn">start/restart</button>
+					<button id="resetGame">reset</button>
+					
+					<!--phone controls-->
+					<aside class="controls">
+						<button id="up">up</button>
+						<button id="down">down</button>
+					</aside>
+				</article>
+				
+				<article ><!--fill in the form-->
+					<h2>Having a problem or see misinformation?</h2>
+					<h3>If there was any problems or any information that was noted wrongly on our site, please fill out this form to inform us about it.</h3>
+					<form id="formpaper">
+						<p>
+							<label>Name:</label>
+							<input id="name" type="text"><br>
+						</p>
+						<p>
+							<label>Date:</label>
+							<input id="date" type="date"><br>
+						</p>
+						<p>
+							<label>Reason:</label>
+							<select id="reason">
+								<option>Problems with website</option>
+								<option>Missing/Misinformation</option>
+								<option>Others</option>
+							</select>
+						</p>
+						<p>
+							<label>Details:</label>
+							<br><textarea id="details" rows="5"></textarea><br>
+						</p>
+						<p>
+							<label>Other comments(optional):</label>
+							<br><textarea id="comments"></textarea><br>
+						</p>
+						<br>
+						
+						
+					</form>
+					<div id="thxbox"></div>
+					<button id="submitBn">Submit</button>
+					<button id="resetForm">Reset form</button>
+					
+				</article>
+				
+				<article><!--quiz-->
+					<h2>Do a little quiz!</h2>
+					<form id="quiz">
+						<fieldset>
+							<legend>1. what order are earth's layers(Outer most to inner most)</legend>
+							<label>1)</label>
+							<select id="layer1">
+								<option value="outer">Outer core</option>
+								<option value="mantle">The Mantle</option>
+								<option value="crust">The Crust</option>
+								<option value="inner">Inner core</option>
+							</select>
+							
+							<label>2)</label>
+							<select id="layer2">
+								<option value="outer">Outer core</option>
+								<option value="mantle">The Mantle</option>
+								<option value="crust">The Crust</option>
+								<option value="inner">Inner core</option>
+							</select>
+
+							<label>3)</label>
+							<select id="layer3">
+								<option value="outer">Outer core</option>
+								<option value="mantle">The Mantle</option>
+								<option value="crust">The Crust</option>
+								<option value="inner">Inner core</option>
+							</select>
+						
+							<label>4)</label>
+							<select id="layer4">
+								<option value="outer">Outer core</option>
+								<option value="mantle">The Mantle</option>
+								<option value="crust">The Crust</option>
+								<option value="inner">Inner core</option>
+							</select>
+						</fieldset>
+							
+						
+						<fieldset>
+							<legend>2. Which continent has the most area by land</legend>
+							<input type="radio" name="mostLand" value="antarctica">
+							<label>Antarctica</label><br>
+						  
+							<input type="radio" name="mostLand" value="Asia">
+							<label>Asia</label><br>
+						  
+							<input type="radio" name="mostLand" value="NA">
+							<label>North America</label>
+						</fieldset>
+						
+						<fieldset>
+							<legend>3. How many oceans are there</legend>
+							<input type="radio" name="noOcean" value="p3">
+							<label>3</label><br>
+						  
+							<input type="radio" name="noOcean" value="p7">
+							<label>7</label><br>
+						  
+							<input type="radio" name="noOcean" value="p5">
+							<label>5</label><br>
+							
+							<input type="radio" name="noOcean" value="p4">
+							<label>4</label>
+						</fieldset>
+						
+					</form>
+					
+					<button id="submitQz">submit quiz</button>
+					<button id="resetQz">Reset quiz</button>
+					<div id="correctBox"></div>
+				</article>
+				
+			</section>
+			
+			<section class="page" id="page1">
+				<h2 id="histHeader">History</h2>
+				<h3 id="histHeaderDes">The earth didnt just come out of thin air, we used to be a flaming ball of fire. 
+				The earth was formed approximately 4.54 billion years ago. The earth's history is divided into four major eons</h3>
+				<div class="vl"></div><!-- vl = vertical line-->
+				<article id="Timeline">
+					<h2>Timeline</h2>
+				</article>
+				
+				<!--ball is to make a timeline dot and horizontal line is to link it to wtv-->
+				<div class="hl" id="to1"></div><!-- hl = horizontal line-->
+				<div class="ball" id="ball_1"></div>
+				<article id="firstHist">
+					<h3>Hadean - 4.54 to 4.0 billion years ago</h3>
+					<p>Earth formed from the solar nebula's residual dust and gas. Shortly after, a collision with a Mars-sized planet named Theia formed our Moon. 
+					The surface was initially covered in magma, which gradually cooled to form the first oceans.<p>
+				</article>
+				
+				<div class="hl" id="to2"></div>
+				<div class="ball" id="ball_2"></div>
+				<article id="secondHist">
+					<h3>Archean - 4.0 to 2.5 billion years ago</h3>
+					<p>This is when the earth cooled down enough to form continents and produced the beginnings of life on Earth. 
+					Single-celled bacteria, like Cyanobacteria, helped to make a path to what we have today</p>
+				</article>
+				
+				<div class="hl" id="to3"></div>
+				<div class="ball" id="ball_3"></div>
+				<article id="thirdHist">
+					<h3>Proterozoic -  2.5 billion to 541 Million Years ago)</h3>
+					<p>This eon can be divided in 3 sub-divisions</p>
+					<!--not useing ol cuz it would stick out of the boxs and this looks nicer-->
+					<p>1. Paleoproterozoic(2.5B to 1.6B) - This is when bacteria like Cyanobacteria, Eukaryotes and other forms of multicellular organisms 
+					produced massive amounts of oxygen, shaping the earth's current atmosphere.
+					This was known as the Great Oxygenation Event.</p>
+					<p>2. Mesoproterozoic(1.6B to 1B) - (fill this later)</p>
+					
+				</article>
+				
+				<div class="hl" id="to4"></div>
+				<div class="ball" id="ball_4"></div>
+				<article id="fourthHist">
+					<h3>Phanerozoic - 541 Million Years ago – Present</h3>
+					<p>The Phanerozoic eon can divided into three eras:<p>
+					<p>1. Palaeozoic - the era of arthropods, fishes, and the first life on land</p>
+					<p>2. Mesozoic - this spanned the rise, reign, and climactic extinction of the non-avian dinosaurs</p>
+					<p>3. Cenozoic - the rise of mammals</P>
+				</article>
+				
+				<aside id="extraInfo">
+					<h3>For more infomation</h3>
+					<p>Visit the <a href="https://en.wikipedia.org/wiki/History_of_Earth" target="_blank">History of Earth</a> wikipedia page</p>
+				</aside>
+			</section>
+			
+			<section class="page" id="page2">
+				<h2>Continents</h2>
+				<h3>The land mass on earth is spilt up into 7 different regions</h3>
+				<figure>
+					<img src="images/world_map.png" title="earth map" alt="earth map">
+					<figcaption>
+						Original photo by <a href="https://commons.wikimedia.org/w/index.php?curid=123099225" target="_blank">Petr Dlouhý</a> 
+					</figcaption>
+				</figure>
+
+				<!--class for stylying-->
+				<article class="continents">
+					<div id="A">
+						<h3>Asia</h3>
+						<p>the largest of the 7</p>
+					</div>
+					
+					<hr class="between"><!--hr with between only appears when width is below 800px-->
+					
+					<div id="Af">
+						<h3>Africa</h3>
+						<p>Africa is the world's second-largest and second-most populous continent after Asia</p>
+					</div>
+					
+					<hr id="AnAF">
+					
+					<div id="NAm">
+						<h3>North America</h3>
+						<p>This is where the United States of America, the 3rd most human populated country.</p>
+					</div>
+					
+					<hr class="between">
+					
+					<div id="SAm">
+						<h3>South America</h3>
+						<p>This is where the Amazon rainforest is located</p>
+					</div>
+					
+					<hr id="NAmnSAm">
+					
+					<div id="Ant">
+						<h3>Antarctica</h3>
+						<p>Earth's southernmost, coldest, driest, and windiest continent</p>
+					</div>
+					
+					<hr class="between">
+					
+					<div id="E">
+						<h3>Europe</h3>
+						<p>There are quite a few counties that span across Europe and Asia. One of these counties is Russia, the largest country on earth 
+						(fun fact: 80% of its population live in the Europe part of the country even though most of the land is in Asia, 
+						Russia is considered a Europe country)</p>
+					</div>
+					
+					<hr id="AntnE">
+					
+					<div id="Aus">
+						<h3>Australia</h3>
+						<p>Australia is the earth's smallest traditional continent, it is regarded as both a continent and country. 
+						Sometimes people would regard this area as Oceania which is actually a broader geographic region which Australia is nested in.</p>
+					</div>
+				</article>
+				
+				<h2>Oceans</h2>
+				<h3>Between all that land are 5 different Oceans that separate them all</h3>
+				
+				<figure>
+					<img src="images/world_map_oceans.png" title="earth ocean map" alt="earth ocean map">
+					<figcaption>
+						Original photo by <a href="https://commons.wikimedia.org/w/index.php?curid=123099225" target="_blank">Petr Dlouhý</a> 
+					</figcaption>
+				</figure>
+				
+				<article class="oceans">
+					<div id="P">
+						<h3>Pacific</h3>
+						<p>The Pacific Ocean is the largest and deepest of Earth's five oceans.
+						Bounded by Asia and Australia in the west and the Americas in the east.</p>
+					</div>
+					
+					<hr class="between">
+					
+					<div id="At">
+						<h3>Atlantic</h3>
+						<p>The Atlantic separating the Americas from Europe and Africa. 
+						Being the second largest Ocean on earth, it is about 24% of the water surface area</p>
+					</div>
+					
+					<hr id="PnAt">
+					
+					<div id="I">
+						<h3>Indian</h3>
+						<p>The Indain oceans handles a massive share of worldwide oil and cargo shipments. 
+						It relies on critical routes like the Strait of Malacca, Strait of Hormuz, 
+						and the Suez Canal. It is located between Africa, Asia, and Australia.</p>
+					</div>
+					
+					<hr class="between">
+					
+					<div id="S">
+						<h3>Southern</h3>
+						<p>While being the second smallest ocean earth have, covering 25% of total ocean surface area, 
+						the Southern Ocean takes up about 40% of all human-generated carbon dioxide absorbed by the world's oceans.</p>
+					</div>
+					
+					<hr id="InS">
+					
+					<div id="Arc">
+						<h3>Arctic</h3>
+						<p>The Arctic ocean is the polar region of Earth that surrounds the North Pole. 
+						It is almost entirely covered by water, much of it frozen.</p>
+					</div>
+				</article>
+				
+			</section>
+			
+			<section class="page" id="page3">
+				<h2>Earth layers</h2>
+				<h3>The earth is made up of 4 main layers</h3>
+				
+				<figure>
+					<img src="images/earth_layers.png" title="earth layers" alt="earth layers">
+					<figcaption>
+						Original photo found on <a href="https://pixabay.com/illustrations/earth-globe-layer-soil-rocks-5660940/" target="_blank">pixabay</a>
+					</figcaption>
+				</figure>
+				
+				<article class="layers">
+					<div id="crust">
+						<h2>The Crust</h2>
+						<p>It is the top most layer and the most studied layer. Its only about 32km think under the continents.
+						The temperture range of the crust is from air temperture to about 870 degrees celcius.</p>
+					</div>
+				
+					<hr class="between">
+				
+					<div id="mantle">
+						<h2>The Mantle</h2>
+						<p>The Mantle is the largest layer of the earth. It takes up about 84% of the earth's volume.
+						It is made up of very hot dense rock with the thickness of about 2,900 kilometers. 
+						The upper Mantle is spilt into 2 layers, the rigid lithospheric mantle (the uppermost mantle), 
+						and the more ductile asthenosphere, separated by the lithosphere-asthenosphere boundary</p>
+					</div>
+					
+					<hr id="CnMtoOnI">
+					
+					<div id="Ocore">
+						<h2>Outer core</h2>
+						<p>The core of the Earth is like a ball of very hot metals, 
+						it is so hot that the metals in it are all in the liquid state.  
+						The outer core is located about 2,900 km below the crust and is about 2,250 km thick. 
+						It is composed of the melted metals nickel and iron.</p>
+					</div>
+				
+					<hr class="between">
+					
+					<div id="Icore">
+						<h2>Inner core </h2>
+						<p>It is primarily a solid ball with a radius of about 1,230 km, 
+						which is about 20% of Earth's radius or 70% of the Moon's radius.
+						The inner core of the earth has temperatures reaching so high that the metals are squeezed together and 
+						are not able to move about like a liquid. The temperatures may reach ~4,982°C. 
+						and the pressures are 45,000,000 psi.</p>
+					</div>
+				</article>
+			</section>
+			
+		</main>
+		
+		<footer>
+			<h1>Want to see this on your phone?</h1>
+			<p>Scan the qr code using your phone!</p>
+		</footer>
+		
+	</body>
+</html>
