@@ -349,4 +349,4 @@ fieldset{border:solid black 1px}
 	#to1,#to2,#to3,#to4{grid-column:2/3;margin-left:14vw;margin-right:10vw}
 	.vl{grid-column:1/2;height:80%;margin-bottom:4vh}
 }
-.menuShow{display:block}/*resetting margin and padding to remove any weird default spacing*/
+.menuShow{display:block}
